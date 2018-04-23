@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textContactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:text="Contact Name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/system_blue"
+        android:textSize="@dimen/text_size_large" />
+    <TextView
+        android:text="Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_below="@+id/textContactName"
+        android:id="@+id/Address" />
+
+
+    <TextView
+        android:id="@+id/City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textContactName"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/Address"
+        android:layout_toRightOf="@+id/Address"
+        android:text="City" />
+    <TextView
+        android:id="@+id/State"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textContactName"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/City"
+        android:layout_toRightOf="@+id/City"
+        android:text="State" />
+    <TextView
+        android:id="@+id/Zip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textContactName"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/State"
+        android:layout_toRightOf="@+id/State"
+        android:text="Zip" />
+
+    <TextView
+        android:text="Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_below="@+id/Address"
+        android:id="@+id/textPhoneNumber" />
+
+
+    <TextView
+        android:id="@+id/Cellno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Address"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_toEndOf="@+id/textPhoneNumber"
+        android:layout_toRightOf="@+id/textPhoneNumber"
+        android:text="Cell" />
+
+    <Button
+        android:id="@+id/buttonDeleteContact"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textContactName"
+        android:background="@color/system_transparent"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Delete"
+        android:textColor="@color/system_red"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50px"
+        android:layout_height="40px"
+        android:layout_marginTop="8dp"
+        android:layout_alignLeft="@+id/textPhoneNumber"
+        android:layout_alignStart="@+id/textPhoneNumber"
+        android:layout_alignTop="@+id/textContactName"
+        android:layout_gravity="left"
+        android:paddingRight="0px"
+        app:srcCompat="@drawable/arrow" />
+
+
+</RelativeLayout>
